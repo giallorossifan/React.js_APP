@@ -3,8 +3,15 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import leiabear from '/public/leiabear-removebg.png';
 import Item from '/src/myitem';
+import React from 'react';
 
-
+class StarWars extends React.Component{
+  render(){
+    return (
+      <h1> May the Force Be With You </h1>
+    )
+  }
+}
 
 
 function App() {
@@ -26,8 +33,11 @@ function App() {
           count is {count}
         </button>
         <p>
-          Edit <Item /><code>src/App.jsx</code> and save to test HMR
+          Edit <Item name="Leia Bear" /><code>src/App.jsx</code> and save to test HMR
+          <Item name="Lisa Bear" />
+          <Item name="Ella Bear" />
         </p>
+        <StarWars />
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
