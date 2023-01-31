@@ -13,12 +13,15 @@ class StarWars extends React.Component{
       name: null,
       height: null,
       gender: null,
+      image: null,
     }
   }
   getNewCharacter() {
-    const randomNumber = Math.round(Math.random() * 82)
+    const randomNumber = Math.round(Math.random() * 88)
     // below is a template literal
-    const url = `https://swapi.dev/api/people/${randomNumber}/`
+
+    const url = `https://akabab.github.io/starwars-api/api/id/${randomNumber}.json`
+    //const url = `https://swapi.dev/api/people/${randomNumber}/`
     fetch(url)
       .then(response => response.json())
       .then(data => {
@@ -26,6 +29,7 @@ class StarWars extends React.Component{
       name: data.name,
       height: data.height,
       gender: data.gender,
+      image: data.image,
       loadedCharacter: true,
      })
     })
@@ -42,6 +46,10 @@ class StarWars extends React.Component{
             <h3> {this.state.name} </h3>
             <h3> {this.state.height} cm </h3>
             <h3> {this.state.gender} </h3>
+            {/* <h3> {this.state.image} </h3> */}
+          <img src={this.state.image} className="" alt="characterImage" />
+
+
           </div>
 
         }
