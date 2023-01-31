@@ -22,10 +22,9 @@ clickMe(){
     return (
 
   <div>
-      <h1 onClick={() => this.clickMe() }> Ciao, My Name is {this.props.name}</h1>
-
-      <span>{this.state.clicks} is the number of clicks</span>
+      <h1> Ciao, My Name is </h1>
   </div>
+
       )
   }
 }

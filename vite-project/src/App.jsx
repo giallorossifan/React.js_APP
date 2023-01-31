@@ -3,68 +3,15 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import leia_bear from '/public/leia_bear.png';
 import Item from '/src/myitem';
+import Starwars from '/src/starwars';
+import About from '/src/about';
+import Family from '/src/family';
+import Askme from '/src/askme';
+
+
+
 import React from 'react';
 
-class StarWars extends React.Component{
-  constructor() {
-    super ()
-    this.state = {
-      loadedCharacter: false,
-      name: null,
-      height: null,
-      gender: null,
-      image: null,
-    }
-  }
-  getNewCharacter() {
-    const randomNumber = Math.round(Math.random() * 88)
-    // below is a template literal
-
-    const url = `https://akabab.github.io/starwars-api/api/id/${randomNumber}.json`
-    //const url = `https://swapi.dev/api/people/${randomNumber}/`
-    fetch(url)
-      .then(response => response.json())
-      .then(data => {
-      this.setState({
-      name: data.name,
-      height: data.height,
-      gender: data.gender,
-      image: data.image,
-      loadedCharacter: true,
-     })
-    })
-
-  }
-
-  render(){
-    return (
-      <div>
-        {
-          this.state.loadedCharacter &&
-          <div>
-            <h3> May the Force Be With You </h3>
-            <h3> {this.state.name} </h3>
-            <h3> {this.state.height} cm </h3>
-            <h3> {this.state.gender} </h3>
-            {/* <h3> {this.state.image} </h3> */}
-          <img src={this.state.image} className="" alt="characterImage" />
-
-
-          </div>
-
-        }
-
-        <button type="button"
-          onClick={() => this.getNewCharacter()}
-          className="btn">
-            Random StarWars Character
-        </button>
-
-      </div>
-
-    )
-  }
-}
 
 
 function App() {
@@ -72,35 +19,43 @@ function App() {
 
   return (
     <div className="App">
+
+
+        <div className="aboutleiaContainer">
+          <About />
+          <Family />
+        </div>
+
       <div>
-        <a href="https://vitejs.dev" target="_blank">
+        <a href=" " target="_blank">
           <img src={leia_bear} className="logo" alt="Vite logo" />
         </a>
-        <a href="https://reactjs.org" target="_blank">
-          {/* <img src={leia_bear} className="logo react" alt="React logo" /> */}
-        </a>
       </div>
-      <h1>Vite + React</h1>
+
+      <div class="leiaIntro">
+      <h1> Hi I'm Leia Bear </h1>
+      </div>
+
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+
+        {/* <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
-        </button>
+        </button> */}
         <p>
-          Edit <Item name="Leia Bear" /><code>src/App.jsx</code> and save to test HMR
           {/* <Item name="Lisa Bear" /> */}
           {/* <Item name="Ella Bear" /> */}
         </p>
 
-
-        <div>
-          <StarWars />
+        <div className="starwarsContainer">
+        <Starwars />
+        <Askme />
         </div>
 
 
+
+
+
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more with Richie
-      </p>
     </div>
   )
 }
