@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
-import leiabear from '/public/leiabear-removebg.png';
+import leia_bear from '/public/leia_bear.png';
 import Item from '/src/myitem';
 import React from 'react';
 
@@ -74,10 +74,10 @@ function App() {
     <div className="App">
       <div>
         <a href="https://vitejs.dev" target="_blank">
-          <img src={leiabear} className="logo" alt="Vite logo" />
+          <img src={leia_bear} className="logo" alt="Vite logo" />
         </a>
         <a href="https://reactjs.org" target="_blank">
-          <img src={leiabear} className="logo react" alt="React logo" />
+          {/* <img src={leia_bear} className="logo react" alt="React logo" /> */}
         </a>
       </div>
       <h1>Vite + React</h1>
@@ -99,7 +99,7 @@ function App() {
 
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        Click on the Vite and React logos to learn more with Richie
       </p>
     </div>
   )

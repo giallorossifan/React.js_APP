@@ -7,6 +7,8 @@ npm install
 npm run dev
 
 If cloning:
+run npm i vite
+this will load/install vite then,
 run npm i
-this will load all packages then run
+this will load all packages then,
 npm run dev
