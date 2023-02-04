@@ -26,7 +26,7 @@ function App() {
           <Family />
         </div>
 
-      <div>
+      <div className="mainImage">
         <a href=" " target="_blank">
           <img src={leia_bear} className="logo" alt="Vite logo" />
         </a>
