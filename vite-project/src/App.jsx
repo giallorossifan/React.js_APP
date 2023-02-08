@@ -3,10 +3,10 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import leia_bear from '/public/leia_bear.png';
 import Item from '/src/myitem';
-import Starwars from '/src/starwars';
+// import Starwars from '/src/starwars';
 import About from '/src/about';
 import Family from '/src/family';
-import Askme from '/src/askme';
+import AskMe from '/src/askMe';
 
 
 
@@ -36,26 +36,18 @@ function App() {
       <h1> Hi I'm Leia Bear </h1>
       </div>
 
-      <div className="card">
+      {/* <div className="card"> */}
 
-        {/* <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button> */}
-        <p>
-          {/* <Item name="Lisa Bear" /> */}
-          {/* <Item name="Ella Bear" /> */}
-        </p>
-
-        <div className="starwarsContainer">
-        <Starwars />
-        <Askme />
+        <div className="aboutleiaContainer">
+        <AskMe />
+        <Family />
         </div>
 
 
 
 
 
-      </div>
+      {/* </div> */}
     </div>
   )
 }

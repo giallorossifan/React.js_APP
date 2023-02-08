@@ -1,7 +1,7 @@
-/* *{
+ *{
   box-sizing: border-box;
 
-} */
+}
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -31,11 +31,14 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
+  /* display: flex; */
   place-items: center;
-  min-width: 320px;
+  /* min-width: 320px; */
+  /* max-width: 120px; */
+
   min-height: 100vh;
   background-color: aquamarine;
+  border: 2px dashed red;
 
 }
 
@@ -54,6 +57,7 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  display: inline;
 }
 button:hover {
   border-color: #646cff;
@@ -79,28 +83,34 @@ button:focus-visible {
 
 .mainImage{
   display:block;
-  margin-left: 35px;
+  padding-top: 0px;
   border: 3px solid hotpink;
+  width: 100%;
 }
 
 /* My css below*/
 
+/* Starwars and Ask Me button */
 .btn{
   background-color: black;
-  border: 2x solid red;
+  border: 2px solid red;
   color: red;
-  padding: 20px;
+  /* padding: 20px; */
+  display: inline-block;
+  width: 150px;
+  height: auto;
+
 }
 
 .leiaIntro{
-border: 2px solid blue;
-padding: 10px;
+border: 3px solid blue;
+/* padding: 10px; */
 text-align: center;
 width: 100%;
 }
 
-.aboutleiaContainer{
-  padding: 20px;
+.aboutleiaContainer, .starwarsContainer{
+  /* padding: 20px; */
   display:inline-block;
   width: 100%;
   position: relative;
@@ -111,7 +121,8 @@ width: 100%;
 .aboutButton{
   border: 2px solid yellowgreen;
   display: inline-block;
-  margin-right: 200px;
+  margin-right: 20px;
+  width: 200px;
 }
 /* About End */
 
@@ -119,7 +130,8 @@ width: 100%;
 .familyButton{
   border: 2px solid black;
   display: inline-block;
-  margin-left: 200px;
+  /* margin-left: 200px; */
+  width: 200px;
 }
 
 .familyImages{
@@ -137,13 +149,7 @@ width: 100%;
 
 /* Starwars */
 .characterImage{
-  /* border: 2px solid green; */
+  border: 2px solid green;
   width: auto;
   height: 150px;
 }
-
-.starwarsContainer{
-  width: 150px;
-}
-
-/* Starwars End */
