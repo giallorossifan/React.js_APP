@@ -8,6 +8,7 @@ import About from '/src/about';
 import Family from '/src/family';
 import AskMe from '/src/askMe';
 
+import { BrowserRouter as Router, Route} from 'react-router-dom';
 
 
 import React from 'react';
@@ -15,12 +16,15 @@ import React from 'react';
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
 
 
+    <Router>
+    {/* <div className="App"> */}
+
+    <Route path="/" exact>
         <div className="aboutleiaContainer">
           <About />
           <Family />
@@ -36,19 +40,24 @@ function App() {
       <h1> Hi I'm Leia Bear </h1>
       </div>
 
-      {/* <div className="card"> */}
 
         <div className="aboutleiaContainer">
         <AskMe />
         <Family />
         </div>
+    </Route>
 
 
 
+        <Route path= "/myitem">
+          <Item />
+        </Route>
 
 
-      {/* </div> */}
-    </div>
+
+    {/* </div> */}
+
+    </Router>
   )
 }
 

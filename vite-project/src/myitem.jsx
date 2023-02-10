@@ -22,7 +22,7 @@ clickMe(){
     return (
 
   <div>
-      <h1> Ciao, My Name is </h1>
+      <h1> Ciao, My Name is Claudie  </h1>
   </div>
 
       )
