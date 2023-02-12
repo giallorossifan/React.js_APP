@@ -8,7 +8,7 @@ import About from '/src/about';
 import Family from '/src/family';
 import AskMe from '/src/askMe';
 
-import { BrowserRouter as Router, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, NavLink} from 'react-router-dom';
 
 
 import React from 'react';
@@ -22,7 +22,12 @@ function App() {
 
 
     <Router>
-    {/* <div className="App"> */}
+
+
+        <NavLink to= "/myitem">
+          <h1> This is a NavBar</h1>
+        </NavLink>
+
 
     <Route path="/" exact>
         <div className="aboutleiaContainer">
@@ -31,7 +36,7 @@ function App() {
         </div>
 
       <div className="mainImage">
-        <a href=" " target="_blank">
+        <a href="" target="">
           <img src={leia_bear} className="logo" alt="Vite logo" />
         </a>
       </div>
@@ -43,7 +48,13 @@ function App() {
 
         <div className="aboutleiaContainer">
         <AskMe />
-        <Family />
+
+        <Link to="/myitem">
+        <button>
+          <h1> Pictures </h1>
+        </button>
+        </Link>
+
         </div>
     </Route>
 
@@ -55,7 +66,6 @@ function App() {
 
 
 
-    {/* </div> */}
 
     </Router>
   )

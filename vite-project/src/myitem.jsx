@@ -1,21 +1,11 @@
 import React from 'react';
 
-class Item extends React.Component {
+
+class Pictures extends React.Component {
 
 constructor(props){
   super(props)
 
-  this.state = {
-      clicks: 0
-  }
-}
-
-
-
-clickMe(){
-  this.setState({
-    clicks: this.state.clicks + 1
-  })
 }
 
   render(){
@@ -30,4 +20,4 @@ clickMe(){
 }
 
 
-export default Item;
+export default Pictures;
