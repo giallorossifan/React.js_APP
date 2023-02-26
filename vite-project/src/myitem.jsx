@@ -1,7 +1,6 @@
 import React from 'react';
 
-
-class Pictures extends React.Component {
+class Item extends React.Component {
 
 constructor(props){
   super(props)
@@ -12,7 +11,7 @@ constructor(props){
     return (
 
   <div>
-      <h1> Ciao, My Name is Claudie  </h1>
+      <h1> Pictures go here  </h1>
   </div>
 
       )
@@ -20,4 +19,4 @@ constructor(props){
 }
 
 
-export default Pictures;
+export default Item;

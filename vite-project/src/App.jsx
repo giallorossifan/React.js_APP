@@ -7,6 +7,7 @@ import Item from '/src/myitem';
 import About from '/src/about';
 import Family from '/src/family';
 import AskMe from '/src/askMe';
+import Navbar from '/src/navbar';
 
 import { BrowserRouter as Router, Route, Link, NavLink} from 'react-router-dom';
 
@@ -23,10 +24,7 @@ function App() {
 
     <Router>
 
-
-        <NavLink to= "/myitem">
-          <h1> This is a NavBar</h1>
-        </NavLink>
+          <Navbar />
 
 
     <Route path="/" exact>
