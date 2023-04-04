@@ -1,7 +1,7 @@
  import React from 'react';
 
 import Item from '/src/myitem';
-import leia_bear from '/public/leia_bear.png';
+import leia_bear from '/src/leia_bear.png';
 
 class Family extends React.Component {
 
