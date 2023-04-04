@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
-import leia_bear from '/public/leia_bear.png';
+import leia_bear from '/src/leia_bear.png';
 import Item from '/src/myitem';
 // import Starwars from '/src/starwars';
 import About from '/src/about';
